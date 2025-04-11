@@ -37,7 +37,7 @@ docker tag video-streaming australia-southeast1-docker.pkg.dev/sit737-25t1-behba
 docker push australia-southeast1-docker.pkg.dev/sit737-25t1-behbahani-2aa0d06/my-repo/video-streaming:latest
 ```
 
-⸻
+---
 
 ## 🧪 3. Run the Container (Test from Cloud Image)
 
@@ -47,7 +47,7 @@ Use this to test the image directly from the Artifact Registry:
 docker run -p 8080:80 -e PORT=80 australia-southeast1-docker.pkg.dev/sit737-25t1-behbahani-2aa0d06/my-repo/video-streaming:latest
 ```
 
-⸻
+---
 
 ## ⚙️ 4. Using Docker Compose
 
@@ -57,7 +57,7 @@ Local development:
 docker-compose -f docker-compose.yml up
 ```
 
-⸻
+---
 
 ## 🧹 5. Cleanup
 
@@ -67,7 +67,7 @@ To stop and remove containers:
 docker-compose down
 ```
 
-⸻
+---
 
 ## 📁 File Structure
 

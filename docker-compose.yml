@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  video-streaming:
+    image: australia-southeast1-docker.pkg.dev/sit737-25t1-behbahani-2aa0d06/my-repo/video-streaming:latest
+    container_name: video-streaming
+    ports:
+      - "8080:80"
+    environment:
+      - PORT=80
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

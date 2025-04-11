@@ -66,17 +66,3 @@ To stop and remove containers:
 ```bash
 docker-compose down
 ```
-
----
-
-## 📁 File Structure
-
-.
-├── docker-compose.yml # Local development
-├── docker-compose-cloud.yml # Production deployment
-├── .dockerignore
-└── video-streaming/
-├── Dockerfile # Container definition
-├── package.json
-└── src/
-└── index.js # Core application logic

@@ -72,9 +72,11 @@ docker-compose down
 ## 📁 File Structure
 
 .
-├── docker-compose.yml
-├── README.md
+├── docker-compose.yml # Local development
+├── docker-compose-cloud.yml # Production deployment
+├── .dockerignore
 └── video-streaming/
-├── Dockerfile
+├── Dockerfile # Container definition
+├── package.json
 └── src/
-└── index.js
+└── index.js # Core application logic
